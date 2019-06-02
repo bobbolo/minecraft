@@ -1,0 +1,3 @@
+5 10 * * * /home/backup/snapshots/online_backup.sh > /home/backup/snapshots/online_backup.log 2>&1
+
+2 10 * * * find /home/backup/snapshots/20* -type d -prune -mtime +0 -exec rm -rf {} \;
