@@ -1,0 +1,2 @@
+#clean out the logs once a day
+0 10 * * * find /home/cfmain/minecraft/logs -name '*.gz*' -mtime +4 -exec rm {} \;
